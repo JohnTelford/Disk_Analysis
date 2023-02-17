@@ -82,3 +82,67 @@ out, err = proc.communicate()
 print("Out: ", out.decode("utf-8"))
 print("Err: ", err.decode("utf-8"))
 ```
+
+You
+---
+
+split line delimited by spaces and process each field
+
+ChatGPT
+-------
+
+You can achieve your goal by using the following approach:
+
+```
+# Split the line up into a list
+line = line.split(' ')
+
+# Loop through the list
+for field in line:
+    # Do something with each field
+    # (you can define how you want to process it here)
+```
+
+You
+---
+
+python pick out each field in each line of a file
+
+ChatGPT
+-------
+
+No problem! You can use the `split()` method to pick out each field in each line of a file.
+
+For example, if your file contains this:
+
+```
+name age address
+Bob 10 123 Main St.
+Mary 12 124 Second Ave.
+```
+
+You can create a loop that reads through each line and applies the `split()` method to break it up into individual fields. Here's an example of how you could do that:
+
+```python
+# Open the file 
+with open('file.txt') as f:
+    # Create a loop that reads each line 
+    for line in f:
+        # Split the line with the space character " " 
+        fields = line.split(" ")
+        # Access the information for each field 
+        name = fields[0]
+        age = fields[1]
+        address = fields[2]
+        
+        print(name +" "+ age +" "+ address)
+```
+
+This will output:
+
+```
+Bob 10 123 Main St.
+Mary 12 124 Second Ave.
+```
+
+Hope that helps!
