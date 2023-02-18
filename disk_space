@@ -34,6 +34,5 @@
 /dev/disk14s9    4.0T    89M   1.5T     1%     107 39068137333    0%   /Volumes/Q-Lightroom
 /dev/disk14s7    4.0T    19G   1.5T     2%     459 39068136981    0%   /Volumes/books
 /dev/disk14s6    4.0T   3.1G   1.5T     1%     149 39068137291    0%   /Volumes/nzb
-devfs            421k   421k     0B   100%    1422           0  100%   /dev
-map auto_home      0B     0B     0B   100%       0           0  100%   /System/Volumes/Data/home
-Filesystem       Size   Used  Avail Capacity iused       ifree %iused  Mounted on
+
+\t

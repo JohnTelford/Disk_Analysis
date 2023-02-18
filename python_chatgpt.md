@@ -146,3 +146,76 @@ Mary 12 124 Second Ave.
 ```
 
 Hope that helps!
+
+
+You
+---
+
+pandas name columns
+
+ChatGPT
+-------
+
+You can use the `.rename()` method to rename pandas columns.
+
+Example:
+
+```
+df = pd.DataFrame({'Name': ['John', 'Mike', 'Sarah'], 
+                   'Age': [21, 41, 19]} 
+                  )
+
+# Rename 'Name' column to 'First Name'
+df.rename(columns={'Name': 'First Name'}, inplace=True) 
+```
+
+The `inplace` parameter is responsible for mutate the existing DataFrame and rename the columns.
+
+You
+---
+
+pandas read file
+
+ChatGPT
+-------
+
+To read a file with pandas, you can use the `read_csv` function.
+
+It takes files in a variety of formats and allows you to specify the columns and other variables if you wish. This could be used if you want to name the columns, as you can use the `names` argument.
+
+For example: `df = pd.read_csv('filename.csv', names=['column1','column2','column3','column4'])`.
+
+You
+---
+
+pandas read space delimited file
+
+ChatGPT
+-------
+
+### Reading Files in Pandas
+
+The `pandas` library is equipped with numerous functions to help you load data into your program.
+
+First, you can `read_csv()` to import a file containing comma separated values.
+
+You can also `read_table()` to import a file containing whitespace delimited values.
+
+When using the `read_csv()` and `read_table()` functions, you can specify the names for the columns of data in the file by using the `names` parameter. For example:
+
+```python
+import pandas as pd
+
+df = pd.read_csv('data.csv', names=['Col1', 'Col2', 'Col3'])
+```
+
+The code above will read from the file `data.csv` and assign the given column names `Col1`, `Col2`, and `Col3` to each respective column in the file.
+
+You can also use the `header` parameter to skip a certain number of lines at the beginning of the file:
+
+```python
+df = pd.read_csv('data.csv', header=1, 
+                 names=['Col1', 'Col2', 'Col3'])
+```
+
+In this example, the first line of the file would be skipped, allowing you to specify initial column names.
