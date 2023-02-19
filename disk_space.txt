@@ -1,3 +1,4 @@
+Filesystem       Size   Used    Avail  Capacity iused ifree   %iused  Mounted 
 /dev/disk4s6s1   500G    15G    29G    35%  553779  4881263661    0%   /
 /dev/disk4s1     500G   441G    29G    94% 2980384  4878837056    0%   /System/Volumes/Data
 /dev/disk4s2     500G   867M    29G     3%    5262  4881812178    0%   /System/Volumes/Preboot
