@@ -1,6 +1,55 @@
 You
 ---
 
+pamdas delete dataframe line
+
+ChatGPT
+-------
+
+To delete a line from a `pandas` dataframe, you can use the `drop` method. For example:
+
+```python
+import pandas as pd
+
+df = pd.DataFrame({'A': [0, 1, 2, 3, 4], 
+                   'B': [5, 6, 7, 8, 9], 
+                   'C': [10, 11, 12, 13, 14]})
+
+# Drop row with index value of 2
+df.drop(2, inplace=True)
+```
+
+This will delete the third line from the dataframe and `inplace=True` is used to make the changes permanent without reassigning the variable.
+
+You
+---
+
+use regex
+
+ChatGPT
+-------
+
+The best way to delete a line from a `pandas` dataframe is by using the `Dataframe.drop()` method. You can specify a line to be deleted by giving it either the index of the line or a Boolean condition.
+
+For example, if you wanted to delete the third line in the dataframe, you could use:
+
+```python
+dataframe.drop(2)
+```
+
+If you instead wanted to delete lines that contained a certain substring (in this case using regex), you could use:
+
+```python
+import re
+
+dataframe[~dataframe['column_name'].str.contains(re.compile('regex'))]
+```
+
+This will return all rows which don't contain the given substring according to the regex pattern.
+
+You
+---
+
 python columns same width
 
 ChatGPT
