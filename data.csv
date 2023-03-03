@@ -1,0 +1,4 @@
+Filesystem,Size,Used,Avail,Capacity,iused,ifree,%iused,Mounted,on
+devfs,425k,425k,0B,100%,1439,0,100%,/dev
+map,auto_home,0B,0B,0B,100%,0,0,100%,/System/Volumes/Data/home
+com.apple.TimeMachine.2022-09-04-170744.local@/dev/disk4s1,500G,420G,64G,87%,2578019,4879239421,0%,/Volumes/com.apple.TimeMachine.localsnapshots/Backups.backupdb/Mac5K/2022-09-04-170744/Mac5KBoot,-,Data
